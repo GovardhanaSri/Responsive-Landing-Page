@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>TaskFlow Todo App</title>
+
+<link rel="stylesheet" href="todo-design.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<header>
+
+<h1>✨ TaskFlow</h1>
+
+<p>Organize your tasks. Achieve your goals.</p>
+
+</header>
+
+
+
+<div class="dashboard">
+
+
+
+<div class="input-area">
+
+
+<input 
+id="taskInput"
+placeholder="Add your task...">
+
+
+
+<input 
+type="datetime-local"
+id="taskDate">
+
+
+
+<select id="category">
+
+<option>Work</option>
+<option>Study</option>
+<option>Personal</option>
+
+</select>
+
+
+
+<select id="priority">
+
+<option>High</option>
+<option>Medium</option>
+<option>Low</option>
+
+</select>
+
+
+
+<button onclick="addTask()">
+Add Task
+</button>
+
+
+</div>
+
+
+
+
+<div class="controls">
+
+
+<input
+id="search"
+placeholder="Search tasks..."
+onkeyup="showTasks()">
+
+
+
+<select id="filter"
+onchange="showTasks()">
+
+
+<option value="all">
+All
+</option>
+
+
+<option value="done">
+Completed
+</option>
+
+
+<option value="pending">
+Pending
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+<div class="progress">
+
+
+<h3>Daily Progress</h3>
+
+
+<div class="bar">
+
+<div id="progressBar"></div>
+
+</div>
+
+
+<p id="count"></p>
+
+
+</div>
+
+
+
+
+<ul id="taskList"></ul>
+
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="todo-function.js"></script>
+
+
+</body>
+
+</html>

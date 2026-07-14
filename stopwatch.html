@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Time Master Stopwatch</title>
+
+<link rel="stylesheet" href="stopwatch-style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="background"></div>
+
+
+<div class="container">
+
+
+<h1>⏱ Stopwatch</h1>
+
+<p class="subtitle">
+Professional Stopwatch & Timer
+</p>
+
+
+
+<div class="clock">
+
+<div id="display">
+00:00:00
+</div>
+
+</div>
+
+
+
+
+<div class="timer-box">
+
+
+<h3>Set Timer</h3>
+
+
+<input type="number" id="hour" placeholder="HH">
+
+<input type="number" id="minute" placeholder="MM">
+
+<input type="number" id="second" placeholder="SS">
+
+
+<button onclick="setTimer()">
+Set
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="buttons">
+
+
+<button onclick="start()">
+▶ Start
+</button>
+
+
+<button onclick="pause()">
+⏸ Pause
+</button>
+
+
+<button onclick="reset()">
+↻ Reset
+</button>
+
+
+<button onclick="lap()">
+🏁 Lap
+</button>
+
+
+</div>
+
+
+
+
+<div class="lap-section">
+
+
+<h2>Lap Times</h2>
+
+
+<ul id="laps"></ul>
+
+
+<button class="clear" onclick="clearLaps()">
+Clear Laps
+</button>
+
+
+</div>
+
+
+
+<p class="keys">
+Space : Start/Pause | R : Reset
+</p>
+
+
+
+</div>
+
+
+
+<script src="stopwatch-script.js"></script>
+
+
+</body>
+
+</html>

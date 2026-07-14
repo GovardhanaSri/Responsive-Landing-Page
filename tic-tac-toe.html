@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ultimate Tic Tac Toe Arena</title>
+
+<link rel="stylesheet" href="tic-tac-toe-style.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<h1>🎮 Ultimate Tic Tac Toe Arena</h1>
+
+<button onclick="toggleTheme()">🌙</button>
+
+</nav>
+
+
+
+<section class="hero">
+
+
+<h2>Welcome To Tic Tac Toe Battle</h2>
+
+<p>
+Challenge your friends or defeat AI
+</p>
+
+
+</section>
+
+
+
+
+
+<section class="controls">
+
+
+<input 
+id="playerName"
+placeholder="Enter Player Name">
+
+
+
+<select id="mode">
+
+<option value="human">
+Player VS Player
+</option>
+
+
+<option value="computer">
+Player VS Computer
+</option>
+
+
+</select>
+
+
+
+
+<button onclick="startGame()">
+Start Game
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+<div class="game-box">
+
+
+
+<div class="status">
+
+
+<h2 id="turn">
+Player X Turn
+</h2>
+
+
+<div class="score">
+
+
+<div>
+<h3>X</h3>
+<span id="xScore">0</span>
+</div>
+
+
+<div>
+<h3>Draw</h3>
+<span id="drawScore">0</span>
+</div>
+
+
+<div>
+<h3>O</h3>
+<span id="oScore">0</span>
+</div>
+
+
+</div>
+
+
+
+
+<h3>
+⏱ Time :
+<span id="timer">
+0
+</span>
+</h3>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div id="board" class="board"></div>
+
+
+
+
+
+
+<div class="buttons">
+
+
+<button onclick="restartGame()">
+Restart Game
+</button>
+
+
+
+<button onclick="resetScore()">
+Reset Score
+</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<section class="features">
+
+
+<h1>
+Features
+</h1>
+
+
+
+<div class="feature-container">
+
+
+
+<div class="card">
+
+<h2>🤖 AI Mode</h2>
+
+<p>
+Fight against computer
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>🏆 Score Board</h2>
+
+<p>
+Track every win
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>✨ Animation</h2>
+
+<p>
+Modern gaming effects
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>⚡ Fast Game</h2>
+
+<p>
+Real time gameplay
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+<h2>
+Ultimate Tic Tac Toe
+</h2>
+
+<p>
+HTML | CSS | JavaScript Project
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="tic-tac-toe-script.js"></script>
+
+
+</body>
+
+</html>
